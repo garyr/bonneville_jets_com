@@ -17,7 +17,7 @@ description: Frequently asked questions about Bonneville Jets — AMA, turbine w
 <dd>There is a single portable toilet on site during the event. No fresh water or other services at the flying field. Bring your own food, water, power, and everything you need for this remote area. <strong>Dry camping is available at the RC field</strong> (no hookups). The town of <strong>Grantsville</strong> is about <strong>10 miles</strong> away and has food, water, fuel, and other services.</dd>
 
 <dt>What about the access road and large RVs?</dt>
-<dd>The access road to the field is dirt and can often be impassable for large motorhomes depending on conditions. Plan accordingly.</dd>
+<dd>The access road to the field is dirt and can often be impassable for large motorhomes and sedans depending on conditions. Plan accordingly.</dd>
 
 <dt>Are spectators and families welcome?</dt>
 <dd>Yes. Families and spectators are welcome. Only pilots and spotters are allowed at the flight line; spectators must stay behind the flight line for safety.</dd>
