@@ -34,6 +34,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 /* Header — matches hero image top (#052D51) */
@@ -133,7 +134,7 @@ body {
   width: 100%;
 }
 /* No gap between header and hero on home page */
-.main:has(> .content > .hero-wrap) {
+body.page-home .main {
   padding-top: 0;
   padding-bottom: 1.5rem;
 }
@@ -170,10 +171,14 @@ a:focus {
   color: var(--blue-mid);
 }
 
-/* Hero wrap — image with overlapping event card and body */
-.hero-wrap {
+/* Hero section: wrap + event box (event overlaps on desktop, stacks on mobile) */
+.hero-section {
   position: relative;
   margin-bottom: -14rem;
+}
+.hero-wrap {
+  position: relative;
+  margin-bottom: 0;
   z-index: 0;
 }
 
@@ -204,7 +209,7 @@ a:focus {
   }
 }
 
-/* Hero — event card in upper part of hero image (stays on top when scrolling) */
+/* Hero — event card in upper part of hero (absolute within .hero-section on desktop) */
 .hero-event {
   position: absolute;
   top: 20%;
@@ -264,6 +269,64 @@ a:focus {
   }
 }
 
+/* Mobile home: hero full-bleed (no left margin), event box on top of hero, no overlap with main */
+@media (max-width: 900px) {
+  body.page-home .main {
+    padding-bottom: 2rem;
+    overflow: visible;
+  }
+  body.page-home .main .content {
+    background: var(--surface);
+    overflow: visible;
+  }
+  body.page-home .hero-section {
+    background: var(--surface);
+    margin-bottom: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+  }
+  body.page-home .hero-wrap {
+    margin-bottom: 0;
+    line-height: 0;
+  }
+  body.page-home .hero-banner {
+    height: 38vh;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    width: 100%;
+  }
+  body.page-home .hero-banner img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    vertical-align: bottom;
+  }
+  body.page-home .hero-event {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: -18rem 1rem 0.5rem;
+    width: auto;
+    max-width: none;
+    z-index: 2;
+  }
+  body.page-home .main-content-box {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    padding-bottom: 2.5rem;
+  }
+}
+
 .hero-event h1 {
   margin: 0 0 0.5rem;
   font-size: 1.25rem;
@@ -298,15 +361,20 @@ a:focus {
 
 .hero-event a:focus { outline: none; }
 
-/* Main content box — solid white panel over hero, spaced below event box */
+/* Main content box — mobile first: normal flow; desktop: overlaps hero */
 .main-content-box {
   position: relative;
   z-index: 1;
-  margin-top: -24rem;
+  margin-top: 1rem;
   padding: 2rem 1.75rem;
   background: var(--surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+@media (min-width: 901px) {
+  body.page-home .main-content-box {
+    margin-top: -24rem;
+  }
 }
 .main-content-box .tagline {
   margin-top: 0;
@@ -316,7 +384,7 @@ a:focus {
 }
 
 /* Tagline & lead */
-.hero-wrap + .main-content-box .tagline,
+body.page-home .hero-section + .main-content-box .tagline,
 .main-content-box .tagline {
   margin-bottom: 0.75rem;
 }
@@ -428,7 +496,14 @@ a:focus {
   background: var(--dark);
   color: rgba(255, 255, 255, 0.88);
   padding: 1.5rem 1.5rem;
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: 1.5rem;
+    padding-bottom: max(3.5rem, calc(env(safe-area-inset-bottom) + 2rem));
+  }
 }
 
 .footer-inner {

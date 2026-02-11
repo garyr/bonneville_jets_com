@@ -3,9 +3,11 @@ title: Home
 description: Bonneville Jets, annual AMA RC turbine jet event on the Bonneville Salt Flats. June 18-20, 2026 at Misty Way R/C Field, Grantsville, UT.
 ---
 
-<div class="hero-wrap">
-  <div class="hero-banner">
-    <img src="assets/images/hero.jpg" alt="RC turbine jets at Bonneville Salt Flats" width="1600" height="1067" loading="eager">
+<div class="hero-section">
+  <div class="hero-wrap">
+    <div class="hero-banner">
+      <img src="assets/images/hero.jpg" alt="RC turbine jets at Bonneville Salt Flats" width="1600" height="1067" loading="eager">
+    </div>
   </div>
   <div class="hero-event">
     <div class="hero-event-text">

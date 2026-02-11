@@ -86,9 +86,11 @@ def build_page(template, md_path, out_path):
     title = meta.get("title", "Page")
     description = meta.get("description", "Bonneville Jets — annual AMA RC turbine jet event.")
     content_html = render_md(body)
+    body_class = "page-home" if md_path == "index.md" else ""
     html = template.replace("{{ title }}", title)
     html = html.replace("{{ description }}", description)
     html = html.replace("{{ content }}", content_html)
+    html = html.replace("{{ body_class }}", body_class)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
     print(f"  {md_path} -> {out_path.relative_to(ROOT)}")

@@ -20,7 +20,25 @@ Output is written to **`docs/`** for GitHub Pages. No extra dependencies (Python
 
 ## Local preview
 
-Open `docs/index.html` in a browser, or serve the `docs` folder (e.g. `python3 -m http.server 8000 --directory docs` then visit http://localhost:8000).
+Open `docs/index.html` in a browser, or serve the `docs` folder:
+
+```bash
+python3 -m http.server 8000 --directory docs
+```
+
+Then visit **http://localhost:8000**.
+
+### Mobile preview (no deploy needed)
+
+1. From the repo root, run:
+   ```bash
+   ./serve.sh
+   ```
+   (Or: `python3 build.py` then `python3 -m http.server 8000 --directory docs`.)
+
+2. In **Chrome**: open http://localhost:8000, press **F12** to open DevTools, then **Ctrl+Shift+M** (Mac: **Cmd+Shift+M**) to toggle the **device toolbar** and pick a phone (e.g. iPhone 12) or set a custom width.
+
+3. Reload after changing CSS or running `build.py`; no need to restart the server.
 
 ## Content
 
