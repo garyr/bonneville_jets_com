@@ -133,10 +133,19 @@ body {
   padding: 2.5rem 1.5rem 2rem;
   width: 100%;
 }
-/* No gap between header and hero on home page */
+/* No gap between header and hero on home page (Chrome/Safari consistency) */
 body.page-home .main {
   padding-top: 0;
   padding-bottom: 1.5rem;
+}
+body.page-home .main .content {
+  padding-top: 0;
+}
+body.page-home .hero-section {
+  margin-top: 0;
+}
+.hero-section {
+  margin-top: 0;
 }
 
 .main :first-child { margin-top: 0; }
@@ -209,10 +218,10 @@ a:focus {
   }
 }
 
-/* Hero — event card in upper part of hero (absolute within .hero-section on desktop) */
+/* Hero — event card over hero (absolute within .hero-section on desktop; % for consistency) */
 .hero-event {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 3rem);
@@ -250,7 +259,7 @@ a:focus {
 }
 @media (min-width: 900px) {
   .hero-event {
-    top: 22%;
+    top: 32%;
   }
   .hero-event-image {
     width: 180px;
@@ -259,7 +268,7 @@ a:focus {
 }
 @media (max-width: 520px) {
   .hero-event {
-    top: 18%;
+    top: 26%;
     padding: 1.25rem 1.25rem;
     gap: 1rem;
   }
@@ -373,7 +382,8 @@ a:focus {
 }
 @media (min-width: 901px) {
   body.page-home .main-content-box {
-    margin-top: -24rem;
+    /* Pull up over hero but stop below hero-event card (Safari needs more clearance) */
+    margin-top: -14rem;
   }
 }
 .main-content-box .tagline {
