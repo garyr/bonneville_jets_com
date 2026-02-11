@@ -83,6 +83,6 @@ Videos and photos from the Bonneville Jets event. If you have footage or images 
 <div class="media-video">
 <iframe src="https://www.youtube.com/embed/UH6PeVSGc40" title="Bonneville Jets 2021 on YouTube" allowfullscreen></iframe>
 </div>
-<p><a href="https://www.youtube.com/watch?v=UH6PeVSGc40" target="_blank" rel="noopener noreferrer">Watch on YouTube</a> — Bonneville Jets 2021</p>
+<p><a href="https://www.youtube.com/watch?v=UH6PeVSGc40" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>, Bonneville Jets 2021</p>
 
 <p class="media-placeholder">Know of a great Bonneville Jets video? <a href="contact.html">Let us know</a>.</p>

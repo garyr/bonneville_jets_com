@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Frequently asked questions about Bonneville Jets — AMA, turbine waiver, fees, facilities, camping, and what to bring.
+description: Frequently asked questions about Bonneville Jets, AMA, turbine waiver, fees, facilities, camping, and what to bring.
 ---
 
 # FAQ
@@ -26,6 +26,6 @@ description: Frequently asked questions about Bonneville Jets — AMA, turbine w
 <dd>No. Fire suppression equipment will not be provided. Bring your own as required by AMA turbine operation requirements.</dd>
 
 <dt>What about sun and weather?</dt>
-<dd>Sun and UV exposure at this event is high. Plan accordingly—sunscreen, hat, shade, and plenty of water.</dd>
+<dd>Sun and UV exposure at this event is high. Plan accordingly: sunscreen, hat, shade, and plenty of water.</dd>
 
 </dl>
