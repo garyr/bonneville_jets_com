@@ -34,4 +34,4 @@ The field is in the Bonneville Salt Flats area, near Grantsville.
 
 The access road to the field is **dirt** and can be **impassable for large motorhomes** and sedans depending on conditions. Plan accordingly. Dry camping is available at the field (no hookups). The town of **Grantsville** is about **10 miles** from the field and has food, water, fuel, and other services if you need to stock up.
 
-Questions? [Contact us](contact.html) or join the [Bonneville Jets Facebook group](https://www.facebook.com/groups/bonnevillejets).
+Questions? [Contact us](contact.html) or join the [Bonneville Jets Facebook group](https://www.facebook.com/groups/291669542432033).

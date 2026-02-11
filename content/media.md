@@ -5,7 +5,7 @@ description: Bonneville Jets photos and videos, event gallery, YouTube highlight
 
 # Media
 
-Videos and photos from the Bonneville Jets event. If you have footage or images to share, get in touch or post in the [Facebook group](https://www.facebook.com/groups/bonnevillejets).
+Videos and photos from the Bonneville Jets event. If you have footage or images to share, get in touch or post in the [Facebook group](https://www.facebook.com/groups/291669542432033).
 
 ## Photos
 
