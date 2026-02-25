@@ -13,4 +13,4 @@ description: Get in touch with Bonneville Jets, email and Facebook group.
 
 For questions about the event, registration, or anything else, reach out. We're happy to help.
 
-**Bonneville Jets on Facebook:** [Join the group](https://www.facebook.com/groups/bonnevillejets) for updates, photos, and discussion with pilots and fans. Opens in a new tab.
+**Bonneville Jets on Facebook:** [Join the group](https://www.facebook.com/groups/291669542432033) for updates, photos, and discussion with pilots and fans. Opens in a new tab.
